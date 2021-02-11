@@ -1,0 +1,30 @@
+name = DivSeek Canada Theme
+description = Used on the divseekcanada.ca Tripal site for support of multiple crops focused on plant breeding and variation data research.
+core = 7.x
+base theme = lexus_zymphonies_theme
+
+stylesheets[all][] = css/global.css
+
+regions[search]        	 = Search
+regions[user_menu]    	 = User menu
+regions[contact_no]    	 = Contact number
+regions[slideshow]       = Slideshow
+regions[top_first]       = First top widget
+regions[top_second]      = Second top widget
+regions[top_third]       = Third top widget
+regions[top_forth]       = Forth top widget
+regions[top_fifth]       = Fifth top widget
+regions[top_sixth]       = Sixth top widget
+regions[sidebar_first]   = First sidebar
+regions[sidebar_second]  = Second sidebar
+regions[content]         = Content
+regions[testimonials]    = Testimonials
+regions[bottom_widget_1] = First bottom widget
+regions[bottom_widget_2] = Second bottom widget
+regions[bottom_widget_3] = Third bottom widget
+regions[footer_first]    = First footer widget
+regions[footer_second]   = Second footer widget
+regions[footer_third]    = Third footer widget
+regions[footer_forth]    = Forth footer widget
+regions[page_top] 	  	 = Page top
+regions[page_bottom] 	   = Page bottom

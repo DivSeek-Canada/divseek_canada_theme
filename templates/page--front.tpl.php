@@ -63,6 +63,8 @@
  * @see template_preprocess_page()
  * @see template_process()
  */
+global $base_url;
+$theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme') . '/images';
 ?>
 
 <!-- header -->
@@ -173,12 +175,87 @@
                   <div class="content">
                       <h2 class="title">Sunflower</h2>
                       <p class="copy">Helianthus annuus</p>
-                    </a>
                   </div>
                 </div>
 
             </div>
+
             <div id="tools-navpane">
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Germplasm</h2>
+                    <span class="tag">Germplasm</span>
+                    <span class="tag">Passport</span>
+                    <span class="tag">Phenotypic Values</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Genetic Map</h2>
+                    <span class="tag">Genetic Map</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">MapViewer</h2>
+                    <span class="tag">Genetic Map</span>
+                    <span class="tag">QTL</span>
+                    <span class="tag">Genetic Marker</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Trait > QTL > Genetic Marker Tool</h2>
+                    <span class="tag">Trait</span>
+                    <span class="tag">Genetic Map</span>
+                    <span class="tag">QTL</span>
+                    <span class="tag">Genetic Marker</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Phenotypic Traits</h2>
+                    <span class="tag">Trait</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Trait Distribution</h2>
+                    <span class="tag">Trait</span>
+                    <span class="tag">Germplasm</span>
+                    <span class="tag">Phenotypic Values</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Genotype Matrix</h2>
+                    <span class="tag">Genetic Marker</span>
+                    <span class="tag">Genotypic data</span>
+                </div>
+              </div>
+
+              <div class="tool">
+                <div class="content">
+                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <h2 class="title">Genetic Markers</h2>
+                    <span class="tag">Genetic Marker</span>
+                </div>
+              </div>
+
             </div>
           </div>
 

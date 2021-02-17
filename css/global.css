@@ -22,14 +22,38 @@ th {
 
 #divseek-navpane {
   margin-top: 50px;
+  display: inline-flex;
 }
 #divseek-navpane #crops-navpane {
-  display: inline-block;
-  width: 40%;
+  flex-grow: 0;
+  width: 360px;
 }
 #divseek-navpane #tools-navpane {
+  flex-grow: 1;
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row wrap;
+  margin-left: 50px;
+}
+
+/* Tool Cards */
+#tools-navpane .tool {
+  width: 200px;
+  height: 200px;
+  margin: 0 30px 30px 30px;
+  text-align: center;
+}
+
+#tools-navpane .tool .tag {
   display: inline-block;
-  width: 60%;
+  white-space: nowrap;
+  background-color: #0C9CD0;
+  border: 1px solid #E5E3E3;
+  border-radius: 15px;
+  padding: 2px 6px;
+  color: white;
+  font-weight: bold;
+  margin: 2px;
 }
 
 /* Crop Cards */
@@ -42,7 +66,7 @@ th {
   padding: 1rem;
   margin-left: 30px;
   margin-bottom: 30px;
-  width: 60%;
+  width: 300px;
   height: 200px;
   text-align: center;
   color: whitesmoke;

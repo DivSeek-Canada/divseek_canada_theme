@@ -183,77 +183,110 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
             <div id="tools-navpane">
 
               <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Germplasm</h2>
-                    <span class="tag">Germplasm</span>
-                    <span class="tag">Passport</span>
-                    <span class="tag">Phenotypic Values</span>
-                </div>
+                <a href="<?php print url('search/germplasm'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Germplasm</h2>
+                      <div class="tags">
+                        <span class="tag germ">Germplasm Passport</span>
+                        <span class="tag pheno">Phenotypic Values</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
               <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Genetic Map</h2>
-                    <span class="tag">Genetic Map</span>
-                </div>
+                <a href="<?php print url('search/genetic-maps'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Genetic Map</h2>
+                      <div class="tags">
+                        <span class="tag geno">Genetic Map</span>
+                          <span class="tag germ">Germplasm</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
               <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">MapViewer</h2>
-                    <span class="tag">Genetic Map</span>
-                    <span class="tag">QTL</span>
-                    <span class="tag">Genetic Marker</span>
-                </div>
+                <a href="<?php print url('MapViewer'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">MapViewer</h2>
+                      <div class="tags">
+                        <span class="tag geno">Genetic Map</span>
+                        <span class="tag pheno">QTL</span>
+                        <span class="tag geno">Genetic Marker</span>
+                      </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="tool disabled">
+                <a href="<?php print url('<front>'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Trait > QTL > Genetic Marker Tool</h2>
+                      <div class="tags">
+                        <span class="tag pheno">Trait</span>
+                        <span class="tag geno">Genetic Map</span>
+                        <span class="tag pheno">QTL</span>
+                        <span class="tag geno">Genetic Marker</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
               <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Trait > QTL > Genetic Marker Tool</h2>
-                    <span class="tag">Trait</span>
-                    <span class="tag">Genetic Map</span>
-                    <span class="tag">QTL</span>
-                    <span class="tag">Genetic Marker</span>
-                </div>
+                <a href="<?php print url('search/traits'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Phenotypic Traits</h2>
+                      <div class="tags">
+                        <span class="tag pheno">Trait</span>
+                        <span class="tag germ">Germplasm</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
               <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Phenotypic Traits</h2>
-                    <span class="tag">Trait</span>
-                </div>
+                <a href="<?php print url('phenotypes/trait-distribution'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Trait Distribution</h2>
+                      <div class="tags">
+                        <span class="tag pheno">Trait</span>
+                        <span class="tag germ">Germplasm</span>
+                        <span class="tag pheno">Phenotypic Values</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
-              <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Trait Distribution</h2>
-                    <span class="tag">Trait</span>
-                    <span class="tag">Germplasm</span>
-                    <span class="tag">Phenotypic Values</span>
-                </div>
+              <div class="tool disabled">
+                <a href="<?php print url('<front>'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Genotype Matrix</h2>
+                      <div class="tags">
+                        <span class="tag geno">Genetic Marker</span>
+                        <span class="tag geno">Genotypic data</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
-              <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Genotype Matrix</h2>
-                    <span class="tag">Genetic Marker</span>
-                    <span class="tag">Genotypic data</span>
-                </div>
-              </div>
-
-              <div class="tool">
-                <div class="content">
-                    <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                    <h2 class="title">Genetic Markers</h2>
-                    <span class="tag">Genetic Marker</span>
-                </div>
+              <div class="tool disabled">
+                <a href="<?php print url('<front>'); ?>">
+                  <div class="content">
+                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <h2 class="title">Genetic Markers</h2>
+                      <div class="tags">
+                        <span class="tag geno">Genetic Marker</span>
+                      </div>
+                  </div>
+                </a>
               </div>
 
             </div>

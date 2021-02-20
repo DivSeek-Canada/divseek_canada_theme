@@ -44,17 +44,85 @@ th {
   text-align: center;
 }
 
-#tools-navpane .tool .tag {
-  display: inline-block;
-  white-space: nowrap;
-  background-color: #0C9CD0;
-  border: 1px solid #E5E3E3;
-  border-radius: 15px;
-  padding: 2px 6px;
-  color: white;
-  font-weight: bold;
-  margin: 2px;
+#tools-navpane .tool .tags .tag {
+	display: inline-block;
+	height: 23px;
+	margin: 0 5px 10px; 0;
+	padding: 0 7px 0 14px;
+	white-space: nowrap;
+	position: relative;
+
+	background-color: #0C9CD0;
+
+	color: #FFFFFF;
+	text-decoration: none;
+
+	border-top: 1px solid #E5E3E3;
+	border-bottom: 1px solid #E5E3E3;
+	border-right: 1px solid #E5E3E3;
+	border-radius: 1px 2px 2px 1px;
 }
+#tools-navpane .tool .tags .tag:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: -6px;
+	width: 10px;
+	height: 10px;
+
+	background-color: #0C9CD0;
+
+	border-left: 1px solid #E5E3E3;
+	border-bottom: 1px solid #E5E3E3;
+	border-radius: 0 0 0 2px;
+}
+#tools-navpane .tool .tags .tag:before {
+	-webkit-transform: scale(1, 1.5) rotate(45deg);
+	-moz-transform: scale(1, 1.5) rotate(45deg);
+	-ms-transform: scale(1, 1.5) rotate(45deg);
+	transform: scale(1, 1.5) rotate(45deg);
+}
+#tools-navpane .tool .tags .tag:after {
+	content: '';
+	position: absolute;
+	top: 7px;
+	left: 1px;
+	width: 5px;
+	height: 5px;
+	background: #FFF;
+	border-radius: 4px;
+	border: 1px solid #E5E3E3;
+}
+
+#tools-navpane .tool .tag.geno,
+  #tools-navpane .tool .tag.geno:before {
+
+  background-color: #f56420;
+}
+
+#tools-navpane .tool .tag.germ,
+  #tools-navpane .tool .tag.germ:before {
+
+  background-color: #1faf37;
+}
+
+#tools-navpane .tool .tag.pheno,
+  #tools-navpane .tool .tag.pheno:before {
+
+  background-color: #0C9CD0;
+}
+
+#tools-navpane .tool.disabled .title {
+  color: #9ba2aa !important;
+}
+#tools-navpane .tool.disabled .tag,
+  #tools-navpane .tool.disabled .tag:before {
+
+  color: #acb3bb !important;
+  background-color: whitesmoke !important;
+}
+
+
 
 /* Crop Cards */
 /** Credit goes to: https://codepen.io/hexagoncircle/pen/XWbWKwL */

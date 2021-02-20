@@ -67,6 +67,8 @@ global $base_url;
 $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme') . '/images';
 ?>
 
+<script src="https://kit.fontawesome.com/13f2ffbd3d.js" crossorigin="anonymous"></script>
+
 <!-- header -->
 
 <div id="header_wrapper">
@@ -185,7 +187,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool">
                 <a href="<?php print url('search/germplasm'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                      <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-seedling fa-stack-1x fa-inverse"></i>
+                      </span>
                       <h2 class="title">Germplasm</h2>
                       <div class="tags">
                         <span class="tag germ">Germplasm Passport</span>
@@ -198,8 +203,11 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool">
                 <a href="<?php print url('search/genetic-maps'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
-                      <h2 class="title">Genetic Map</h2>
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-map-marked-alt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h2 class="title">Genetic Map</h2>
                       <div class="tags">
                         <span class="tag geno">Genetic Map</span>
                           <span class="tag germ">Germplasm</span>
@@ -211,7 +219,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool">
                 <a href="<?php print url('MapViewer'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-map-signs fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">MapViewer</h2>
                       <div class="tags">
                         <span class="tag geno">Genetic Map</span>
@@ -225,7 +236,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool disabled">
                 <a href="<?php print url('<front>'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-layer-group fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">Trait > QTL > Genetic Marker Tool</h2>
                       <div class="tags">
                         <span class="tag pheno">Trait</span>
@@ -240,7 +254,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool">
                 <a href="<?php print url('search/traits'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">Phenotypic Traits</h2>
                       <div class="tags">
                         <span class="tag pheno">Trait</span>
@@ -253,7 +270,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool">
                 <a href="<?php print url('phenotypes/trait-distribution'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-chart-bar fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">Trait Distribution</h2>
                       <div class="tags">
                         <span class="tag pheno">Trait</span>
@@ -267,7 +287,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool disabled">
                 <a href="<?php print url('<front>'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-table fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">Genotype Matrix</h2>
                       <div class="tags">
                         <span class="tag geno">Genetic Marker</span>
@@ -280,7 +303,10 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               <div class="tool disabled">
                 <a href="<?php print url('<front>'); ?>">
                   <div class="content">
-                      <img class="tool-icon" src="<?php print $theme_images;?>/icon.png" width="80" height="80" />
+                    <span class="fa-stack fa-4x">
+                      <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                      <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                    </span>
                       <h2 class="title">Genetic Markers</h2>
                       <div class="tags">
                         <span class="tag geno">Genetic Marker</span>
@@ -291,13 +317,6 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
 
             </div>
           </div>
-
-
-
-
-
-
-
 
       </div>
     </div>

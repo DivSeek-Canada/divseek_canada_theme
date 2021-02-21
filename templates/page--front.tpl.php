@@ -159,21 +159,21 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
             <div id="crops-navpane">
 
                 <!-- Change this to be dynamic in the preprocess function. -->
-                <div class="card">
+                <div class="card" data-crop="Flax" data-genus="Linum">
                   <div class="content">
                     <h2 class="title">Flax</h2>
                     <p class="copy">Linum usitatissimum</p>
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-crop="Lentil" data-genus="Lens">
                   <div class="content">
                     <h2 class="title">Lentil</h2>
                     <p class="copy">Lens culinaris</p>
                   </div>
                 </div>
 
-                <div class="card">
+                <div class="card" data-crop="Sunflower" data-genus="Helianthus">
                   <div class="content">
                       <h2 class="title">Sunflower</h2>
                       <p class="copy">Helianthus annuus</p>
@@ -373,3 +373,5 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
   </div>
 
 </div>
+
+ <script src="<?php print drupal_get_path('theme', 'divseekcanada_theme') . '/js/frontpage-toolselector.js'?>"></script>

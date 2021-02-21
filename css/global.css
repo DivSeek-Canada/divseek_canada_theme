@@ -20,6 +20,20 @@ th {
  * Frontpage
  */
 
+#divseek-directions-pane {
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+#divseek-directions-pane  #crops-directions {
+  display: inline-block;
+  width: 360px;
+  margin-left: 30px;
+}
+#divseek-directions-pane  #tools-directions {
+  display: inline-block;
+  margin-left: 50px;
+}
+
 #divseek-navpane {
   margin-top: 50px;
   display: inline-flex;
@@ -150,6 +164,9 @@ th {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
   /* Shadow for the text */
   text-shadow: 1px 0 0 #3b5870,0 1px 0 #3b5870,-1px 0 0 #3b5870,0 -1px 0 #3b5870;
+}
+#crops-navpane .card.selected {
+  border: 6px solid #3b5870;
 }
 #crops-navpane .card:before {
   content: "";

@@ -65,6 +65,22 @@
  */
 global $base_url;
 $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme') . '/images';
+
+$flax_selected = $lentil_selected = $sunflower_selected = '';
+$GET = drupal_get_query_parameters();
+if (isset($GET['genus'])) {
+  switch($GET['genus']) {
+    case 'Linum':
+      $flax_selected = 'selected';
+      break;
+    case 'Lens':
+      $lentil_selected = 'selected';
+      break;
+    case 'Helianthus':
+      $sunflower_selected = 'selected';
+      break;
+  }
+}
 ?>
 
 <script src="https://kit.fontawesome.com/13f2ffbd3d.js" crossorigin="anonymous"></script>
@@ -154,26 +170,32 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
     <div class="container-wrap">
       <div id="content" class="frontpage-content">
 
+        <!-- Add Directions for how to use the Navigation Pane -->
+        <div id="divseek-directions-pane">
+          <span id="crops-directions">Select your Crop</span>
+          <span id="tools-directions">Then Explore...</span>
+        </div>
+
           <!-- Navigation Pane -->
           <div id="divseek-navpane">
             <div id="crops-navpane">
 
                 <!-- Change this to be dynamic in the preprocess function. -->
-                <div class="card" data-crop="Flax" data-genus="Linum">
+                <div class="card<?php print ' '.$flax_selected;?>" data-crop="Flax" data-genus="Linum" data-traitcat="79">
                   <div class="content">
                     <h2 class="title">Flax</h2>
                     <p class="copy">Linum usitatissimum</p>
                   </div>
                 </div>
 
-                <div class="card" data-crop="Lentil" data-genus="Lens">
+                <div class="card<?php print ' '.$lentil_selected;?>" data-crop="Lentil" data-genus="Lens" data-traitcat="72">
                   <div class="content">
                     <h2 class="title">Lentil</h2>
                     <p class="copy">Lens culinaris</p>
                   </div>
                 </div>
 
-                <div class="card" data-crop="Sunflower" data-genus="Helianthus">
+                <div class="card<?php print ' '.$sunflower_selected;?>" data-crop="Sunflower" data-genus="Helianthus" data-traitcat="76">
                   <div class="content">
                       <h2 class="title">Sunflower</h2>
                       <p class="copy">Helianthus annuus</p>
@@ -185,7 +207,9 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
             <div id="tools-navpane">
 
               <div class="tool">
-                <a href="<?php print url('search/germplasm'); ?>">
+                <a href="<?php print url('search/germplasm'); ?>"
+                  data-baseurl="<?php print url('search/germplasm'); ?>"
+                  class="tool-url" data-qparamkey="genus" data-qparamtype="genus">
                   <div class="content">
                       <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -201,7 +225,9 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               </div>
 
               <div class="tool">
-                <a href="<?php print url('search/genetic-maps'); ?>">
+                <a href="<?php print url('search/genetic-maps'); ?>"
+                  data-baseurl="<?php print url('search/genetic-maps'); ?>"
+                  class="tool-url" data-qparamkey="genus" data-qparamtype="genus">
                   <div class="content">
                     <span class="fa-stack fa-4x">
                       <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -252,7 +278,9 @@ $theme_images = $base_url . '/' . drupal_get_path('theme', 'divseekcanada_theme'
               </div>
 
               <div class="tool">
-                <a href="<?php print url('search/traits'); ?>">
+                <a href="<?php print url('search/traits'); ?>"
+                  data-baseurl="<?php print url('search/traits'); ?>"
+                  class="tool-url" data-qparamkey="trait_category" data-qparamtype="traitcat">
                   <div class="content">
                     <span class="fa-stack fa-4x">
                       <i class="fas fa-circle fa-stack-2x text-primary"></i>

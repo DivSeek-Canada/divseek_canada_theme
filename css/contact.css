@@ -1,0 +1,38 @@
+
+#contact-content {
+  display: inline-flex;
+}
+#contact-content #contact-info-container {
+  width: 35%;
+  border: 1px solid #E5E3E3;
+  background: #3b5870;
+  height: 725px;
+  text-align: center;
+  color: whitesmoke;
+  padding: 30px;
+  line-height: 30px;
+}
+#contact-content #contact-info-container .fa-icon {
+  font-size: 10em;
+  margin: 60px 10px;
+}
+
+
+#contact-content #contact-form-container {
+  width: 65%;
+  height: 725px;
+  border: 1px solid #E5E3E3;
+  background-color: #0C9CD0;
+  padding: 30px 20px;
+  color: white;
+  font-weight: bolder;
+}
+#contact-content #contact-form-container input, #contact-content select {
+  width: 100%;
+}
+#contact-content #contact-form-container fieldset.captcha {
+  background: #0C9CD0;
+}
+#contact-content #contact-form-container fieldset.captcha legend {
+  display: none;
+}

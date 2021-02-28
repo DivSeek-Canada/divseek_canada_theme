@@ -19,6 +19,15 @@ th {
 }
 
 /**
+ * Nested Tables.
+ */
+table table th {
+  background-color: #e5e5e5;
+  color: #666666;
+  border: 1px solid #dbdbdb;
+}
+
+/**
  * Frontpage
  */
 

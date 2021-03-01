@@ -314,7 +314,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool disabled genotype-matrix">
+              <div class="tool disabled genotype-matrix" data-matrix-url="<?php print url('chado/genotype'); ?>">
                 <a href="<?php print url('<front>'); ?>">
                   <div class="content">
                     <span class="fa-stack fa-4x">

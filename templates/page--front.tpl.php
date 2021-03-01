@@ -206,7 +206,7 @@ if (isset($GET['genus'])) {
 
             <div id="tools-navpane">
 
-              <div class="tool">
+              <div class="tool germplasm-search">
                 <a href="<?php print url('search/germplasm'); ?>"
                   data-baseurl="<?php print url('search/germplasm'); ?>"
                   class="tool-url" data-qparamkey="genus" data-qparamtype="genus">
@@ -224,7 +224,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool genetic-map-search">
                 <a href="<?php print url('search/genetic-maps'); ?>"
                   data-baseurl="<?php print url('search/genetic-maps'); ?>"
                   class="tool-url" data-qparamkey="genus" data-qparamtype="genus">
@@ -242,7 +242,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool mapviewer">
                 <a href="<?php print url('MapViewer'); ?>">
                   <div class="content">
                     <span class="fa-stack fa-4x">
@@ -259,7 +259,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool trait-qtl-markers">
                 <a href="<?php print url('search/trait-qtl-markers'); ?>"
                   data-baseurl="<?php print url('search/trait-qtl-markers'); ?>"
                   class="tool-url" data-qparamkey="genus" data-qparamtype="genus">
@@ -279,7 +279,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool trait-search">
                 <a href="<?php print url('search/traits'); ?>"
                   data-baseurl="<?php print url('search/traits'); ?>"
                   class="tool-url" data-qparamkey="trait_category" data-qparamtype="traitcat">
@@ -297,7 +297,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool trait-distribution">
                 <a href="<?php print url('phenotypes/trait-distribution'); ?>">
                   <div class="content">
                     <span class="fa-stack fa-4x">
@@ -330,7 +330,7 @@ if (isset($GET['genus'])) {
                 </a>
               </div>
 
-              <div class="tool">
+              <div class="tool marker-search">
                 <a href="<?php print url('search/markers'); ?>"
                   data-baseurl="<?php print url('search/markers'); ?>"
                   class="tool-url" data-qparamkey="genus" data-qparamtype="genus">

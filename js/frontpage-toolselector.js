@@ -29,7 +29,7 @@
         genus = cropCard.data("genus");
         matrixTool = $(".tool.genotype-matrix");
         matrixTool.removeClass("disabled");
-        newUrl = matrixTool.data("matrix-url") + genus;
+        newUrl = matrixTool.data("matrix-url") + "/" + genus;
         $(".tool.genotype-matrix a").attr("href", newUrl);
       }
 

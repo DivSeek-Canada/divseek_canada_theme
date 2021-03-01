@@ -29,8 +29,8 @@
         genus = cropCard.data("genus");
         matrixTool = $(".tool.genotype-matrix");
         matrixTool.removeClass("disabled");
-        newUrl = 'chado/genotype/' + genus;
-        matrixTool.attr("href", newUrl);
+        newUrl = matrixTool.data("matrix-url") + genus;
+        $(".tool.genotype-matrix a").attr("href", newUrl);
       }
 
       // When a crop card is clicked, Set the GET parameters and update URLs.

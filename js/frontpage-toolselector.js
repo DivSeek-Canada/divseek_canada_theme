@@ -25,6 +25,12 @@
           newUrl = url + "?" + searchParams.toString();
           $(this).attr("href", newUrl);
         });
+        
+        genus = cropCard.data("genus");
+        matrixTool = $(".tool.genotype-matrix");
+        matrixTool.removeClass("disabled");
+        newUrl = 'chado/genotype/' + genus;
+        matrixTool.attr("href", newUrl);
       }
 
       // When a crop card is clicked, Set the GET parameters and update URLs.

@@ -233,7 +233,7 @@
     <div id="copyright" class="full-wrap clearfix">
       <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div> 
     </div>
-    <div id="funders">
+    <div id="funders" class="full-wrap clearfix">
       Development of the DivSeek Canada Portal was funded by <a href="https://www.genomecanada.ca/">Genome Canada</a> and <a href="https://www.genomebc.ca/">Genome BC</a>.
     </div>
   </div>

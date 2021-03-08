@@ -396,12 +396,14 @@ if (isset($GET['genus'])) {
   <div class="footer_credit">
 
     <div id="copyright" class="full-wrap clearfix">
-      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div>
+      <div class="copyright">&copy; <?php echo date("Y"); ?> <?php print $site_name; ?>. All Rights Reserved.</div> 
     </div>
-
+    <div id="funders" class="full-wrap clearfix">
+      Development of the DivSeek Canada Portal was funded by <a href="https://www.genomecanada.ca/">Genome Canada</a> and <a href="https://www.genomebc.ca/">Genome BC</a>.
+    </div>
   </div>
   <div class="credits">
-    <?php print t('Design by'); ?><a href="http://www.zymphonies.com"> Zymphonies</a>
+    Original design by <a href="http://www.zymphonies.com">Zymphonies</a> with modification by Lacey-Anne Sanderson for use with the DivSeek Canada Portal.
   </div>
 
 </div>
